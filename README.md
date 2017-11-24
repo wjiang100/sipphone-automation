@@ -11,12 +11,14 @@ Polycom provides.
 ## Polycom Config File
 In order for your Polycom phones to support this test you must add the following settings to one of the phones cfg files.
 - apps.push.messageType=5
-- apps.push.username=bob
-- apps.push.password=1234
+- apps.push.username=admin
+- apps.push.password=admin
 - apps.statePolling.password="admin"
 - apps.statePolling.username="admin"
 - apps.statePolling.responseMode="0"
 - tone.dtmf.rfc2833Control="0" (This is if you want support for audio detection)
+
+Note that this library uses the same credentials for push and Polling
 
 Below is a better example of this
 ```
